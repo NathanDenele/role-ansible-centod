@@ -1,0 +1,9 @@
+---
+# tasks file for centos
+- name: Item
+  yum: name={{ item }} update_cache=yes state=latest
+  with_items:
+   - vim 
+   - git
+   - zsh
+...
